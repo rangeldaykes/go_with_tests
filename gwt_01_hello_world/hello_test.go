@@ -1,8 +1,9 @@
-package main
+package hello
 
 import "testing"
 
 func TestHello(t *testing.T) {
+
 	got := Hello()
 	want := "Hello, world"
 
@@ -12,6 +13,7 @@ func TestHello(t *testing.T) {
 }
 
 func TestHelloWithName(t *testing.T) {
+
 	got := HelloWithName("world")
 	want := "Hello, world"
 
