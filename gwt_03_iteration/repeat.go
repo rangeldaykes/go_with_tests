@@ -1,8 +1,8 @@
 package gwt_03_iteration
 
-const repeatCount = 5
+//const repeatCount = 5
 
-func Repeat(character string) string {
+func Repeat(character string, repeatCount int) string {
 
 	var repeated string
 
