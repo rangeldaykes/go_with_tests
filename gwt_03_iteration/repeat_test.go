@@ -1,11 +1,8 @@
 package gwt_03_iteration
 
-import (
-	"fmt"
-	"testing"
-)
+import "testing"
 
-func TestRepeat( t *testing.T) {
+func TestRepeat(t *testing.T) {
 	repeated := Repeat("a", 5)
 	expected := "aaaaa"
 
@@ -14,14 +11,8 @@ func TestRepeat( t *testing.T) {
 	}
 }
 
-func BenchmarkRepeat (b *testing.B) {
+func BenchmarkRepeat(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		Repeat("a", 5)
 	}
-}
-
-func ExampleRepeat() {
-	repeated := Repeat("a", 5)
-	fmt.Println(repeated)
-	//Output: aaaaa
 }
